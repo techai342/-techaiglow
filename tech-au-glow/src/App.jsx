@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import ThemeManager from './components/ThemeManager'
-import HeroSection from './components/HeroSection'
-import Features from './components/Features'
-import Footer from './components/Footer'
+import Navbar from './Navbar'
+import ThemeManager from './ThemeManager'
+import HeroSection from './HeroSection'
+import Features from './Features'
+import Footer from './Footer'
 
-export default function App(){
+export default function App() {
   return (
     <div className="min-h-screen relative">
       <ThemeManager />
