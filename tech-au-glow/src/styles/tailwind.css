@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* glass util */
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+}
+
+/* glow-edge utility for faint colored glow */
+.glow-edge {
+  position: relative;
+}
+.glow-edge::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(124,58,237,0.08), rgba(236,72,153,0.06));
+  filter: blur(18px);
+  z-index: -1;
+}
